@@ -1,0 +1,60 @@
+<% layout("/layout/boilerplate") -%>
+  <link rel="stylesheet" href="/css/new.css">
+
+  <body>
+    <div class="form-body">
+      <h3><i>CREATE A NEW LISTING</i> </h3>
+      <div class="form-box">
+        <form method="POST" action="/listings" class=" foram needs-validation" novalidate enctype="multipart/form-data">
+          <div class="mb-3">
+            <input name="listing[title]" class="form-control" placeholder="Enter title" type="text" required />
+            <div class="invalid-feedback">naam likh madharchod.</div>
+          </div>
+        
+          <div class=" des mb-3">
+            <textarea rows="4" name="listing[description]" class="form-control" placeholder="Enter description" required></textarea>
+            <div class="invalid-feedback">Description likh randi.</div>
+            
+          </div>
+        
+      
+        
+            <div class="mb-3">
+            <input name="listing[image]" class="form-control" placeholder="Upload image" type="file" />
+          </div>
+
+          <div class="mb-3">
+            <input name="listing[price]" class="form-control" placeholder="Enter price" type="number" required />
+            <div class="invalid-feedback">kitne me dega likho</div>
+          </div>
+        
+          <div class="mb-3">
+            <input name="listing[country]" class="form-control" placeholder="Enter country" type="text" required />
+            <div class="invalid-feedback">kaha pe dega likho</div>
+          </div>
+        
+          <div class="mb-3">
+            <input name="listing[location]" class="form-control" placeholder="Enter location" type="text" required />
+            <div class="invalid-feedback">yaha pe bhi likho.</div>
+          </div>
+        
+          <button>Add</button>
+        </form>
+        
+      </div>
+    </div>
+
+
+    <script>
+      function previewImage(url) {
+        const img = document.getElementById('previewImg');
+        if (url.trim()) {
+          img.src = url;
+          img.style.display = "block";
+        } else {
+          img.src = "";
+          img.style.display = "none";
+        }
+      }
+    </script>
+  </body>

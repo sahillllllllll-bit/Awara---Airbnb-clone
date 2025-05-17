@@ -1,0 +1,96 @@
+/* 
+  *{
+      margin: 0;
+      padding: 0;
+
+  }
+  body{
+    background-color: black;
+    color: white;
+  }
+  .titles{
+    font-size: 70px;
+    font-weight: 300;
+    font-style: italic;
+  }
+  img{
+      width:400px;
+      height:200px;
+      margin: 10px;
+      padding: 10px;
+  }
+  
+  .container{
+      background-color: antiquewhite;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .title{
+      height:50px;
+      background-color: burlywood;
+  } */
+
+
+  /* General page styling */
+/* Container grid layout */
+
+.title {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.title h3 {
+    margin: 0;
+    font-size: 2rem;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* responsive columns */
+    gap: 20px;
+    padding: 30px;
+  }
+  
+  /* Individual card styling */
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  /* Card hover effect */
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Image styling inside card */
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Title/link styling */
+  .card li {
+    list-style: none;
+    margin: 10px 0;
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px;
+    transition: color 0.3s;
+  }
+  
+  .card a:hover {
+    color: #007BFF;
+  }
+  

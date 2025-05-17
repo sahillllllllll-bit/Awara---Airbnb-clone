@@ -1,0 +1,106 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #007BFF;
+    margin-top: 20px;
+}
+
+/* Listing container */
+ul {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* List item styling */
+ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* Image styling */
+ul img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Edit & Delete links */
+a {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin: 10px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+/* Edit link hover effect */
+a:hover {
+    background-color: #0056b3;
+}
+
+/* Delete button styling */
+form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #d9534f;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Delete button hover effect */
+form button:hover {
+    background-color: #c9302c;
+}
+
+/* Spacing */
+form {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Adding a "back to list" button */
+a.back-button {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Back button hover effect */
+a.back-button:hover {
+    background-color: #218838;
+}

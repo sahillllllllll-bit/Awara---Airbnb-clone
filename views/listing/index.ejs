@@ -1,0 +1,107 @@
+<% layout("/layout/boilerplate") -%>
+    <%- include("../includes/flash.ejs") %>
+        <!-- <%= success %> -->
+        <!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>awara-gogo</title>
+</head>  -->
+<style>
+    .filters{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .filter{
+        text-align: center;
+        margin: 1rem;
+        opacity: 0.5;
+    }
+    .filter:hover{
+        opacity:1;
+        cursor: pointer;
+    }
+    @media (max-width:600px) {
+        
+    
+    .filters {
+  width: 100%;              /* or set a fixed width */
+  overflow-x: auto;         /* enables horizontal scrolling */
+  white-space: nowrap;      /* keeps items in a single line */
+  border: 1px solid #ccc;
+    }
+}
+
+    
+</style>
+
+        <body>
+            <div class="filters ">
+                <div class="filter">
+                    <div><i class="fa-solid fa-signal"></i></div>
+                    
+                        <p>Trending</p>
+                    
+                </div>
+                <div class="filter">
+                    <div><i class="fa-solid fa-mountain"></i></div>
+                    <div>
+                        <p>Mountains</p>
+                    </div>
+                </div>
+                <div class="filter">
+                    <div><i class="fa-solid fa-signal"></i></div>
+                    <div>
+                        <p>Trending</p>
+                    </div>
+                </div>
+                <div class="filter">
+                    <div><i class="fa-solid fa-signal"></i></div>
+                    <div>
+                        <p>Trending</p>
+                    </div>
+                </div>
+                <div class="filter">
+                    <div><i class="fa-solid fa-signal"></i></div>
+                    <div>
+                        <p>Trending</p>
+                    </div>
+                </div>
+                <div class="filter">
+                    <div><i class="fa-solid fa-signal"></i></div>
+                    <div>
+                        <p>Trending</p>
+                    </div>
+                </div>
+                <div class="filter">
+                    <div><i class="fa-solid fa-signal"></i></div>
+                    <div>
+                        <p>Trending</p>
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                <h3>ALL PLACES</h3>
+            </div>
+            <!-- <form method="GET" action="/listings/new">
+        <button>Create New Listing</button>
+      </form> -->
+
+
+
+
+            <div class="container">
+                <% for(let listing of all) { %>
+                    <div class="card">
+                        <a href="/listings/<%= listing._id %>">
+                            <img src="<%=listing.image.url %>"><br>
+                            <br>
+                            <li><a href="/listings/<%= listing._id %>">
+                                    <%= listing.title %>
+                                </a></li>
+                        </a>
+                    </div>
+                    <% } %>
+
+            </div>
+        </body>

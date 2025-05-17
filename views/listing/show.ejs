@@ -1,0 +1,89 @@
+<% layout("/layout/boilerplate") -%>
+<link rel="stylesheet" href="/css/show.css">
+<link rel="stylesheet" href="/css/star.css">
+<link rel="stylesheet" href="/css/map.css">
+<body>
+    <h1><%=list.title %></h1>
+    <ul>
+        <img src="<%=list.image.url %>" ><br>
+        <!-- <li><%= list.title %></li> -->
+        <li><p>Owned by: <%= list.owner.username %></p></li>
+        <li><p><%= list.description %></p></li>
+        <li><p>&#8377; <%= list.price.toLocaleString("en-IN") %></p></li> 
+        <li><p><%= list.location %></p></li>
+        <li><p><%= list.country %></p></li>
+      </ul>
+      <% if(curruser&&curruser._id.equals(list.owner._id)){ %>
+      <a href="/listings/<%= list._id %>/edit">Edit this Listing</a>
+      <br /><br />
+      <form method="POST" action="/listings/<%=list._id%>?_method=DELETE">
+        <button class="delete">Delete this listing</button>
+      </form>
+      <hr>
+      <% } %>
+      <div class="review">
+        <h4>Give A Rating</h4>
+        <form action="/listings/<%=list.id%>/review" method="POST">
+        <label for="rating" class="form-label">Rating</label> 
+          <!-- <input type="range" class="form-range" min="1" max="5" name="review[rating]" id=""> --> 
+  <fieldset class="starability-slot">
+
+  <input type="radio" id="no-rate" class="input-no-rate" name="review[rating]" value="1" checked aria-label="No rating." />
+  <input type="radio" id="first-rate1" name="review[rating]" value="1" />
+  <label for="first-rate1" title="Terrible">1 star</label>
+  <input type="radio" id="first-rate2" name="review[rating]" value="2" />
+  <label for="first-rate2" title="Not good">2 stars</label>
+  <input type="radio" id="first-rate3" name="review[rating]" value="3" />
+  <label for="first-rate3" title="Average">3 stars</label>
+  <input type="radio" id="first-rate4" name="review[rating]" value="4" />
+  <label for="first-rate4" title="Very good">4 stars</label>
+  <input type="radio" id="first-rate5" name="review[rating]" value="5" />
+  <label for="first-rate5" title="Amazing">5 stars</label>
+</fieldset>
+            
+      
+
+
+<label for="comment">Comments</label>
+<textarea name="review[comment]" id="comment" cols="20" rows="5" class="form-control" required></textarea>
+
+ <button>Submit</button>
+        </form>
+        <hr>
+      </div>
+      <% if(list.review.length > 0){ %>
+
+       <h4>All Reviews</h4>
+    
+        <div class="row">
+        <%for(review of list.review ) {%>
+    <div class="card col-5 ms-3 mb-3">
+ <div class="card-body">
+<h5 class="card-title"><%= review.owner.username %></h5>
+<p class="starability-result" data-rating="<%=review.rating%>"></p>
+<p class="card-text"><%=review.comment%></p>
+<!-- <p class="card-text"><%=review.rating%> Stars</p> -->
+<form method="POST" class="mb-3" action="/listings/<%=list._id %>/review/<%=review._id %>?_method=DELETE">
+  <% if (curruser && review.owner && String(curruser._id) === String(review.owner._id)) { %>
+  <button class="btn btn-sm btn-dark">DELETE</button>
+  <%}%>
+</form>
+ </div>
+
+    </div>
+       <% }%>
+    
+      </div>
+      <% }%>
+
+      <h3>You Will Be Here..</h3>
+<!-- <div id="map"></div>
+<script>
+    var map = new maplibregl.Map({
+        container: 'map', // container id
+        style: 'https://demotiles.maplibre.org/style.json', // style URL
+        center: [77.4126, 77.4126], // starting position [lng, lat]
+        zoom: 3 // starting zoom
+    });
+</script> -->
+</body>

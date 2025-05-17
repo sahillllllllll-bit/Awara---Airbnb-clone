@@ -1,0 +1,23 @@
+<% layout("/layout/boilerplate") -%>
+<%- include("../includes/flash.ejs") %>
+<div class="row mt-3">
+    <div class="col-6 offset-3">
+        <h1>Signup on Awara pvt. ltd.</h1>
+        <form action="/signup" method="POST" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <input name="username" class="form-control" id="username" placeholder="Enter username" type="text" required />
+                <div class="invalid-feedback">username should be filled and  unique </div>
+                <div class="valid-feedback">super sexy </div>
+              </div>
+              <div class="mb-3">
+                <input name="email" class="form-control" id="email" placeholder="Enter email" type="email" required />
+              
+              </div>
+              <div class="mb-3">
+                <input name="password" class="form-control" id="password" placeholder="Enter password" type="password" required />
+                
+              </div>
+              <button class="btn btn-success">Signup</button>
+        </form>
+    </div>
+</div>
