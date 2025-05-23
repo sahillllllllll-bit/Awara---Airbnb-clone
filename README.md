@@ -38,3 +38,12 @@ Awara Pvt. Ltd. is a full-featured travel agency website that allows users to ex
 
 ## 📁 Folder Structure
 
+awara-travel-app/
+├── models/ # Mongoose models (User, Place, Rating)
+├── routes/ # Route files (auth, user, admin, places)
+├── views/ # EJS templates
+├── public/ # Static assets (CSS, images, client-side JS)
+├── middleware/ # Custom middleware for auth & role check
+├── .env # Environment configuration file
+├── app.js # Entry point for Express app
+└── package.json # NPM configuration and dependencies
