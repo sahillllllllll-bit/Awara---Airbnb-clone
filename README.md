@@ -1,6 +1,6 @@
-# 🌍 Awara Pvt. Ltd. - Travel Agency Web Application
+# 🌍 Wanderlust Travel Agency Web Application
 
-Awara Pvt. Ltd. is a full-featured travel agency website that allows users to explore, rate, and manage travel destinations. Built with a robust backend and responsive frontend, it provides seamless user experience for both admins and travelers.
+Wanderlust-remake is a full-featured travel agency website that allows users to explore, rate, and manage travel destinations. Built with a robust backend and responsive frontend, it provides seamless user experience for both admins and travelers.
 
 ---
 
