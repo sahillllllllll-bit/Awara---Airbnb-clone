@@ -98,9 +98,9 @@ main().then(()=>{
  app.listen(8090,()=>{
     console.log("app is listening at port 8090, thankyou!")
  })
-//  app.get("/",(req,res)=>{
-//     res.send("hello, welcome to awara enterprises")
-//  })
+ app.get("/",(req,res)=>{
+    res.send("hello, welcome to awara enterprises")
+ })
 
   app.all("",(req,res,next)=>{
     next(new expresserror(404,"Page Not Found"));

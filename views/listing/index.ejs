@@ -32,54 +32,101 @@
     }
 }
 
+.filters {
+  display: flex;
+ flex-wrap: nowrap;
+  height:100px;
+  gap: 0.5rem; /* spacing between filters */
+  overflow-x:auto;
+  overflow-y: hidden;
+ 
+
+  -webkit-overflow-scrolling: touch;
+  padding: 0.5rem;
+}
+
+
+.filters::-webkit-scrollbar {
+  display: none;
+}
+
+
     
 </style>
 
         <body>
-            <div class="filters ">
-                <div class="filter">
-                    <div><i class="fa-solid fa-signal"></i></div>
-                    
-                        <p>Trending</p>
-                    
-                </div>
-                <div class="filter">
-                    <div><i class="fa-solid fa-mountain"></i></div>
-                    <div>
-                        <p>Mountains</p>
-                    </div>
-                </div>
-                <div class="filter">
-                    <div><i class="fa-solid fa-signal"></i></div>
-                    <div>
-                        <p>Trending</p>
-                    </div>
-                </div>
-                <div class="filter">
-                    <div><i class="fa-solid fa-signal"></i></div>
-                    <div>
-                        <p>Trending</p>
-                    </div>
-                </div>
-                <div class="filter">
-                    <div><i class="fa-solid fa-signal"></i></div>
-                    <div>
-                        <p>Trending</p>
-                    </div>
-                </div>
-                <div class="filter">
-                    <div><i class="fa-solid fa-signal"></i></div>
-                    <div>
-                        <p>Trending</p>
-                    </div>
-                </div>
-                <div class="filter">
-                    <div><i class="fa-solid fa-signal"></i></div>
-                    <div>
-                        <p>Trending</p>
-                    </div>
-                </div>
-            </div>
+        <div class="filters">
+    <div class="filter">
+        <div><i class="fa-solid fa-fire"></i></div>
+        <p>Trending</p>
+    </div>
+    <div class="filter">
+        <div><i class="fa-solid fa-mountain"></i></div>
+        <p>Mountains</p>
+    </div>
+    <div class="filter">
+        <div><i class="fa-solid fa-water"></i></div>
+        <p>Beaches</p>
+    </div>
+    <div class="filter">
+        <div><i class="fa-solid fa-city"></i></div>
+        <p>Cities</p>
+    </div>
+    <div class="filter">
+        <div><i class="fa-solid fa-tree"></i></div>
+        <p>Forests</p>
+    </div>
+    <div class="filter">
+        <div><i class="fa-solid fa-chess-knight"></i></div>
+        <p>Historic</p>
+    </div>
+    <div class="filter">
+        <div><i class="fa-solid fa-earth-americas"></i></div>
+        <p>International</p>
+    </div>
+    <div class="filter">
+    <div><i class="fa-solid fa-utensils"></i></div>
+    <p>Food</p>
+</div>
+<div class="filter">
+    <div><i class="fa-solid fa-music"></i></div>
+    <p>Music</p>
+</div>
+<div class="filter">
+    <div><i class="fa-solid fa-film"></i></div>
+    <p>Movies</p>
+</div>
+<div class="filter">
+    <div><i class="fa-solid fa-gamepad"></i></div>
+    <p>Gaming</p>
+</div>
+<div class="filter">
+    <div><i class="fa-solid fa-book"></i></div>
+    <p>Books</p>
+</div>
+<div class="filter">
+    <div><i class="fa-solid fa-camera"></i></div>
+    <p>Photography</p>
+</div>
+<div class="filter">
+    <div><i class="fa-solid fa-futbol"></i></div>
+    <p>Sports</p>
+</div>
+<div class="filter">
+    <div><i class="fa-solid fa-briefcase"></i></div>
+    <p>Business</p>
+</div>
+<div class="filter">
+    <div><i class="fa-solid fa-paint-brush"></i></div>
+    <p>Art</p>
+</div>
+<div class="filter">
+    <div><i class="fa-solid fa-graduation-cap"></i></div>
+    <p>Education</p>
+</div>
+
+</div>
+
             <div class="title">
                 <h3>ALL PLACES</h3>
             </div>
