@@ -1,6 +1,12 @@
 {
-  "engines":{
- "node": "22.14.0"
+  "name": "wanderlust-awara",
+  "version": "1.0.0",
+  "main": "app.js",
+  "engines": {
+    "node": "22.14.0"
+  },
+  "scripts": {
+    "start": "node app.js"
   },
   "dependencies": {
     "cloudinary": "^2.6.1",
