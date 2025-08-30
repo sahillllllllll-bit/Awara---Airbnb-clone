@@ -53,7 +53,7 @@ if(!list){
 
   //Create Route
  router.post(
-    "/", 
+    "/listings", 
     isloggedin ,
     upload.single("listing[image]"),
     wrapasync(async (req, res,next) => {

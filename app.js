@@ -84,6 +84,10 @@ app.use("/listings", listingsrouter);
 app.use("/listings/:id/review",reviewrouter)
 app.use("/",userrouter)
 
+app.get("/", (req, res) => {
+  res.redirect("/listings");
+});
+
 
 const mongo ="mongodb://127.0.0.1:27017/awara";
 main().then(()=>{
@@ -98,9 +102,7 @@ main().then(()=>{
  app.listen(8090,()=>{
     console.log("app is listening at port 8090, thankyou!")
  })
- app.get("/",(req,res)=>{
-    res.send("hello, welcome to awara enterprises")
- })
+
 
   app.all("",(req,res,next)=>{
     next(new expresserror(404,"Page Not Found"));
