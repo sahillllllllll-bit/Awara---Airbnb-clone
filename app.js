@@ -89,7 +89,7 @@ app.get("/", (req, res) => {
 });
 
 
-const mongo ="mongodb://127.0.0.1:27017/awara";
+const mongo =process.env.MONGODB_URL;
 main().then(()=>{
     console.log("succesfully connected to awara's database")
 }).catch(err=>{
