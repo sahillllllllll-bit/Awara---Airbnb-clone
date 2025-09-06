@@ -7,125 +7,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>awara-gogo</title>
 </head>  -->
-<style>
-    .filters{
-        display:flex;
-        flex-wrap:wrap;
-    }
-    .filter{
-        text-align: center;
-        margin: 1rem;
-        opacity: 0.5;
-    }
-    .filter:hover{
-        opacity:1;
-        cursor: pointer;
-    }
-    @media (max-width:600px) {
-        
-    
-    .filters {
-  width: 100%;              /* or set a fixed width */
-  overflow-x: auto;         /* enables horizontal scrolling */
-  white-space: nowrap;      /* keeps items in a single line */
-  border: 1px solid #ccc;
-    }
-}
+        <style>
+            .filters {
+                display: flex;
+                flex-wrap: wrap;
+            }
 
-.filters {
-  display: flex;
- flex-wrap: nowrap;
-  height:100px;
-  gap: 1rem; /* spacing between filters */
-  overflow-x:auto;
-  overflow-y: hidden;
- 
-  
-  -webkit-overflow-scrolling: touch;
-  padding: 0.5rem;
-}
+            .filter {
+                text-align: center;
+                margin: 1rem;
+                opacity: 0.5;
+            }
+
+            .filter:hover {
+                opacity: 1;
+                cursor: pointer;
+            }
+
+            @media (max-width:600px) {
 
 
-.filters::-webkit-scrollbar {
-  display: none;
-}
+                .filters {
+                    width: 100%;
+                    /* or set a fixed width */
+                    overflow-x: auto;
+                    /* enables horizontal scrolling */
+                    white-space: nowrap;
+                    /* keeps items in a single line */
+                    border: 1px solid #ccc;
+                }
+            }
+
+            .filters {
+                display: flex;
+                flex-wrap: nowrap;
+                height: 100px;
+                gap: 1rem;
+                /* spacing between filters */
+                overflow-x: auto;
+                overflow-y: hidden;
 
 
-    
-</style>
+                -webkit-overflow-scrolling: touch;
+                padding: 0.5rem;
+            }
+
+
+            .filters::-webkit-scrollbar {
+                display: none;
+            }
+        </style>
 
         <body>
-        <div class="filters">
-    <div class="filter">
-        <div><i class="fa-solid fa-fire"></i></div>
-        <p>Trending</p>
-    </div>
-    <div class="filter">
-        <div><i class="fa-solid fa-mountain"></i></div>
-        <p>Mountains</p>
-    </div>
-    <div class="filter">
-        <div><i class="fa-solid fa-water"></i></div>
-        <p>Beaches</p>
-    </div>
-    <div class="filter">
-        <div><i class="fa-solid fa-city"></i></div>
-        <p>Cities</p>
-    </div>
-    <div class="filter">
-        <div><i class="fa-solid fa-tree"></i></div>
-        <p>Forests</p>
-    </div>
-    <div class="filter">
-        <div><i class="fa-solid fa-chess-knight"></i></div>
-        <p>Historic</p>
-    </div>
-    <div class="filter">
-        <div><i class="fa-solid fa-earth-americas"></i></div>
-        <p>International</p>
-    </div>
-    <div class="filter">
-    <div><i class="fa-solid fa-utensils"></i></div>
-    <p>Food</p>
-</div>
-<div class="filter">
-    <div><i class="fa-solid fa-music"></i></div>
-    <p>Music</p>
-</div>
-<div class="filter">
-    <div><i class="fa-solid fa-film"></i></div>
-    <p>Movies</p>
-</div>
-<div class="filter">
-    <div><i class="fa-solid fa-gamepad"></i></div>
-    <p>Gaming</p>
-</div>
-<div class="filter">
-    <div><i class="fa-solid fa-book"></i></div>
-    <p>Books</p>
-</div>
-<div class="filter">
-    <div><i class="fa-solid fa-camera"></i></div>
-    <p>Photography</p>
-</div>
-<div class="filter">
-    <div><i class="fa-solid fa-futbol"></i></div>
-    <p>Sports</p>
-</div>
-<div class="filter">
-    <div><i class="fa-solid fa-briefcase"></i></div>
-    <p>Business</p>
-</div>
-<div class="filter">
-    <div><i class="fa-solid fa-paint-brush"></i></div>
-    <p>Art</p>
-</div>
-<div class="filter">
-    <div><i class="fa-solid fa-graduation-cap"></i></div>
-    <p>Education</p>
-</div>
+            <div class="filters">
+                <div class="filter">
+                    <div><i class="fa-solid fa-fire"></i></div>
+                    <p>Trending</p>
+                </div>
+                <div class="filter">
+                    <div><i class="fa-solid fa-mountain"></i></div>
+                    <p>Mountains</p>
+                </div>
+                <div class="filter">
+                    <div><i class="fa-solid fa-water"></i></div>
+                    <p>Beaches</p>
+                </div>
+                <div class="filter">
+                    <div><i class="fa-solid fa-city"></i></div>
+                    <p>Cities</p>
+                </div>
+                <div class="filter">
+                    <div><i class="fa-solid fa-tree"></i></div>
+                    <p>Forests</p>
+                </div>
+                <div class="filter">
+                    <div><i class="fa-solid fa-chess-knight"></i></div>
+                    <p>Historic</p>
+                </div>
+                <div class="filter">
+                    <div><i class="fa-solid fa-earth-americas"></i></div>
+                    <p>International</p>
+                </div>
+                <div class="filter">
+                    <div><i class="fa-solid fa-utensils"></i></div>
+                    <p>Food</p>
+                </div>
+                <div class="filter">
+                    <div><i class="fa-solid fa-music"></i></div>
+                    <p>Music</p>
+                </div>
+                <div class="filter">
+                    <div><i class="fa-solid fa-film"></i></div>
+                    <p>Movies</p>
+                </div>
+                <div class="filter">
+                    <div><i class="fa-solid fa-gamepad"></i></div>
+                    <p>Gaming</p>
+                </div>
+                <div class="filter">
+                    <div><i class="fa-solid fa-book"></i></div>
+                    <p>Books</p>
+                </div>
+                <div class="filter">
+                    <div><i class="fa-solid fa-camera"></i></div>
+                    <p>Photography</p>
+                </div>
+                <div class="filter">
+                    <div><i class="fa-solid fa-futbol"></i></div>
+                    <p>Sports</p>
+                </div>
+                <div class="filter">
+                    <div><i class="fa-solid fa-briefcase"></i></div>
+                    <p>Business</p>
+                </div>
+                <div class="filter">
+                    <div><i class="fa-solid fa-paint-brush"></i></div>
+                    <p>Art</p>
+                </div>
+                <div class="filter">
+                    <div><i class="fa-solid fa-graduation-cap"></i></div>
+                    <p>Education</p>
+                </div>
 
-</div>
+            </div>
 
             <div class="title">
                 <h3>ALL PLACES</h3>
@@ -144,7 +148,13 @@
                             <img src="<%=listing.image.url %>"><br>
                             <br>
                             <li><a href="/listings/<%= listing._id %>">
-                                    <%= listing.title %>
+                                    <%= listing.title %> <br />
+
+                                       <p> &#8377; <%= listing.price.toLocaleString("en-IN") %> </p>
+
+                                      <p>🌍  <%= listing.location %>,
+                                              <%= listing.country %>
+                                              </p>
                                 </a></li>
                         </a>
                     </div>
