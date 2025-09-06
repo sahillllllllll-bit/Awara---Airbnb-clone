@@ -99,9 +99,11 @@ main().then(()=>{
  async function  main(){
     await mongoose.connect(mongo)
  }
- app.listen(8090,()=>{
-    console.log("app is listening at port 8090, thankyou!")
- })
+   const PORT = process.env.PORT || 3000;
+   app.listen(PORT, () => {
+  console.log(`✅ Server running on port ${PORT}`);
+     });
+
 
 
   app.all("",(req,res,next)=>{
